@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: black;
+    --text: white;
+    --input-background: #f2f2f2;
+    --input-text: rgb(90, 85, 85);
+    --border: #ccc;
+    --button-background: #1ba9c2;
+    --button-text: white;
+}
+
+body.dark {
+    --background: #f2f2f2;
+    --text: black;
+    --input-background: #9b9a9a;
+    --input-text: white;
+    --border: #555;
+    --button-background: #1ba9c2;
+    --button-text: white;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background);
+    color: var(--text);
+    padding: 20px;
+}
+
+#note-text {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--input-background);
+    color: black;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    width: 600px;
+    max-width: 100%;
+    height: 200px;
+}
+
+#char-count {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+#word-count {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.warning {
+    color: orange;
+}
+
+.over {
+    color: red;
+    font-weight: bold;
+}
+
+#clear-btn {
+    margin: 10px 10px 10px 0;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#theme-toggle {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: var(--button-background);
+    color: var(--button-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
