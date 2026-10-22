@@ -12,8 +12,8 @@ note.text.toLowerCase().includes(word.toLowerCase())
 );
 }
 
-console.log(searchNotes("day")); // Expected: [{ id: 2, text: "Finish the Day 3 assignment", category: "study" }]
-console.log(searchNotes("pizza")); // Expected: []
+console.log(searchNotes("day")); 
+console.log(searchNotes("pizza")); 
 
 function longestNote() {
 if (notes.length === 0) {
@@ -34,7 +34,7 @@ return longest;
 
 }
 
-console.log(longestNote()); // Expected: { id: 3, text: "Email the project report to Grace", category: "work" }
+console.log(longestNote()); 
 console.log((() => {
 let originalNotes = notes;
 notes = [];
@@ -60,7 +60,7 @@ return counts;
 
 }
 
-console.log(countByCategory()); // Expected: { personal: 2, study: 2, work: 1 }
+console.log(countByCategory()); 
 console.log((() => {
 let originalNotes = notes;
 notes = [];
@@ -138,5 +138,5 @@ return true;
 
 }
 
-console.log(addNote("Complete JavaScript practice", "study")); // Expected: true
-console.log(addNote("Call mum", "personal")); // Expected: false (duplicate note)
+console.log(addNote("", "personal"));
+console.log(addNote("New note", "random"));

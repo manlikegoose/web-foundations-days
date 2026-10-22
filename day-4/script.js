@@ -72,3 +72,11 @@ themeToggle.addEventListener('click', () => {
         localStorage.setItem('theme', 'light')
     }
 })
+let data;
+
+if (4>2){
+    console.log("yes")
+}else{
+    console.log("no")
+}
+
