@@ -1,0 +1,7 @@
+# Day 8 Reflection
+
+The most difficult concept in this course was designing a system that remains correct when many users make requests at the same time. It is easy to check whether a seat appears available on a page, but that information can become outdated before someone clicks Buy. I worked through this by separating what the browser displays from what the server and database are allowed to confirm. Transactions, row locks, and unique constraints provide the final protection against double-booking.
+
+Based on the feedback I received on my capstone, I would improve the clarity of the architecture and explain the assumptions behind each design decision more explicitly. I would also test important user flows and error cases instead of judging the project only by whether the main path works. I want to use feedback to identify weaknesses and make the next version more reliable.
+
+Next, I want to learn more about database transactions and isolation levels, load testing, caching, and deploying applications reliably. I would practise by generating concurrent seat-hold requests and checking that only one request can successfully reserve a particular seat. I would also learn how to measure response times and identify database bottlenecks under load. These skills would help me move from building features that work for one user to designing applications that remain reliable when many people use them at once.
